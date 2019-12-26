@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Trivia Game </title>
+		<link rel="stylesheet" type="text/css" href="athens.css"/>
+	</head>
+	<body onload="init()">
+		<h1> Welcome to the Trivia Game... </h1>
+		
+		<div id="joinWrapper">
+			<h2> Sign-in... </h2>
+			<input type="text" placeholder="Username" name="username" id="username">
+			<input type="text" placeholder="Game ID" name="room" id="room">
+			<button type="button" id="joinButton"> Join Game </button>
+			<button type="button" id="createButton"> Create Game </button>
+		</div>
+		
+		<div id="questionSpace" hidden="true">
+			<h4 id="questionHeader"> <!-- Question # --> </h4>
+			<p id="questionText"> <!-- Question goes here! --> </p>
+			<ul id="answerList">
+				<!-- <li> 
+						<input value='answer'> radio button
+						<span> answer text
+					</li> -->
+			</ul>
+			<div id="winnerDiv"> <!-- Winners shown here! --> </div>
+			<button type="button" id="answerButton"> Final Answer </button>
+			<button type="button" id="exitButton"> Exit Game </button> 
+		</div>
+		
+		<div id="stats">
+			<h2> Current Players... </h2>
+			<p id='statMsg'>
+				Join/Create a game to get started.
+			</p>
+			<ul id="statList">
+				<!-- Players/Scores go here! -->
+			</ul>
+		</div>
+		
+		<div id="chat">
+			<h2> Chat... </h2>
+			<ul id="messageSpace">
+				<!-- Messages go here -->
+			</ul>
+			<div id="sendMsg">
+				<input type="text" name="messageBox" id="messageBox" placeholder="Message">
+				<label id="instruct" for="messageBox">Use <i>@username:</i> to send private message</label>
+				<br /><button type="button" id="sendButton"> Send </button>
+			</div>
+		</div>
+	
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="triviaScript.js"></script>
+	</body>
+</html>

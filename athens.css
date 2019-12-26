@@ -1,0 +1,105 @@
+/* General */
+body {
+	background-color: #E7E7E7;
+	width: 100%;
+	font-family: Lucida Console;
+}
+
+html {
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+* {box-sizing: border-box;}
+
+h1, h2{
+	font-weight: bold;
+	text-align: center;
+}
+
+ul {list-style-type: none;}
+
+p {text-align: center;}
+
+/* Join Form */
+button[type=button] {
+	background-color: #403F3F;
+	padding: 6px;
+	margin-top: 8px;
+	cursor: pointer;
+	box-sizing: border-box;
+	border: none;
+	font-size: 17px;
+	font-family: Lucida Console;
+	color: #F0F0F0;
+	width: 150px;
+}
+
+button:hover {
+	background-color: #4D4C4C;
+}
+
+input[type=text] {
+	padding: 6px;
+	margin-top: 8px;
+	font-size: 17px;
+	border: none;
+	width: 100%;
+	font-family: Lucida Console;
+}
+
+/* Join Contaner */
+#joinWrapper, #questionSpace{
+	position: absolute;
+	right: 0;
+	margin: 20px;
+	max-width: 40%;
+	padding: 16px;
+	background-color: #D6D6D4;
+}
+
+/* Stats Container */
+#stats {
+	display: inline-block;
+	left: 0;
+	width: 50%;
+	margin: 20px;
+	max-width: 60%;
+	padding: 16px;
+	background-color: #D6D6D4;
+	height: 200px;
+	overflow-y: auto;
+}
+
+/* Chat Container */
+#chat {
+	position: relative;
+	width: 50%;
+	margin: 20px;
+	max-width: 60%;
+	padding: 16px;
+	background-color: #D6D6D4;
+}
+
+#instruct {
+	color: #999999;
+}
+
+#messageSpace li:nth-child(odd) { 
+	background: #999999; 
+}
+
+#messageSpace li {
+	padding: 5px 10px;
+}
+
+#messageSpace {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 200px;
+	overflow-y: auto;
+	overflow-x: auto;
+	word-wrap: break-word;
+}
