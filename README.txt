@@ -1,10 +1,10 @@
-# Author: Katrina Ronquillo
+# Author: M. Katrina Ronquillo
 # ATHENS
 
 Simple trivia web application with multi-room and private/group chat
 functionality.
 
-TOOLS: Javascript, HTML/CSS, Socket.io, OpenTDB
+TOOLS: Javascript, HTML/CSS, Socket.io
 
 # DESIGN DECISIONS
 

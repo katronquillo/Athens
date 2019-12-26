@@ -1,0 +1,19 @@
+{
+  "name": "athens",
+  "version": "1.0.0",
+  "description": "Simple trivia web application with multi-room and private/group chat functionality",
+  "main": "triviaServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node triviaServer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/katronquillo/Athens.git"
+  },
+  "author": "M. Katrina Ronquillo",
+  "license": "MIT",
+  "dependencies": {
+    "socket.io": "^2.3.0"
+  }
+}
