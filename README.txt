@@ -1,4 +1,4 @@
-# Author: Katrina Ronquillo (101143104)
+# Author: Katrina Ronquillo
 # ATHENS
 
 Simple trivia web application with multi-room and private/group chat
